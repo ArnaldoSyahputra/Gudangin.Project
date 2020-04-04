@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff">
+
+
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:src="@drawable/gudangin"
+                        android:id="@+id/gdn"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_below="@id/gdn"
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akun Anda"
+                        android:textColor="#000"
+                        android:textSize="32sp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coin_anda_300"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="#ffe16a"
+                      android:layout_margin="16dp"
+
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/textIdentitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:layout_below="@id/nama"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/textkecil"
+                        android:text="Nomor Identitas"/>
+
+                    <TextView
+                        android:layout_below="@id/textIdentitas"
+                        android:id="@+id/noIdentitas"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxxxxxxxxxxx"
+                        android:textSize="14sp"
+                        android:textColor="@color/textkecil"
+                        android:layout_centerHorizontal="true"/>
+
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_below="@id/imageDone"
+                        android:layout_width="160dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Keluar"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/btn_default"
+                        android:textColor="#FFF"
+                        android:layout_marginBottom="12dp"
+
+                        />
+
+
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imageDone"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/noIdentitas"
+                        android:src="@drawable/ic_done_all_black_24dp"
+                        />
+
+
+                    <TextView
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:id="@+id/verif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akun anda sudah terverifikasi!"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_below="@id/imageDone"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/textkecil"/>
+
+
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

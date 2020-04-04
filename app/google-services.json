@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "986287806924",
+    "firebase_url": "https://gudanginproject.firebaseio.com",
+    "project_id": "gudanginproject",
+    "storage_bucket": "gudanginproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986287806924:android:b9872a796ef4907e",
+        "android_client_info": {
+          "package_name": "com.kunthu.gudangin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986287806924-6gc7epd5q67mefboss96vo4cmn3vlasn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kunthu.gudangin",
+            "certificate_hash": "9ec1e484c4ece4e05f96d299f98fe42096311728"
+          }
+        },
+        {
+          "client_id": "986287806924-v7hht8dr8mn3vr1mccu8ataog084bm7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7P6i47oljv-RRCW4_TuYkQVpOiNhhZFI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986287806924-v7hht8dr8mn3vr1mccu8ataog084bm7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

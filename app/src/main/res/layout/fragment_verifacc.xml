@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifacc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ffffff">
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akun Anda"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#000"
+                        android:textSize="32sp"
+
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:id="@+id/textIdentitas"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/textkecil"
+                        android:textSize="16sp"
+                        android:text="Nomor Identitas"/>
+
+                    <TextView
+                        android:layout_below="@id/textIdentitas"
+                        android:id="@+id/noIdentitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxxxxxxxxxxx"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/textkecil"
+                        android:textSize="14sp"
+                        android:layout_centerHorizontal="true"/>
+
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:background="@drawable/btn_default"
+                        android:layout_below="@id/imageDone"
+                        android:layout_width="160dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Keluar"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ffffff">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/blmverif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="20dp"
+
+                        android:text="Akun anda belum terverifikasi\nsilahkan upload bukti identitas!"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/gambarid"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@id/blmverif"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/add" />
+
+                    <Button
+                        android:id="@+id/ambil"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambarid"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="27dp"
+                        android:background="@drawable/btn_default"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Ambil Gambar \nSelfie Bersama ktp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/gambarid2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@id/blmverif"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/add" />
+
+                    <Button
+                        android:id="@+id/ambil2"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambarid2"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_default"
+                        android:text="Ambil Gambar \nKTP"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+
+                    <Button
+
+                        android:id="@+id/upload"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ambil2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="40dp"
+                        android:background="@drawable/btn_default"
+                        android:text="upload"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>
